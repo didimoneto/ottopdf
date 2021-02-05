@@ -10,7 +10,7 @@ yum -y update aws-cli
 yum -y install \
   awslogs jq ImageMagick
 
-aws configure set default.region $REGION
+aws configure set default.region %REGION%
 
 cp -av $WORKING_DIR/awslogs.conf /etc/awslogs/
 cp -av $WORKING_DIR/spot-instance-interruption-notice-handler.conf /etc/init/spot-instance-interruption-notice-handler.conf
