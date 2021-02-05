@@ -384,7 +384,10 @@ Resources:
               export SQSQUEUE=${sqsQueue} 
               export CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
               chmod +x /root/ottopdf/user-data.sh
-              sed -i "s|%REGION%|${AWS::Region}|g" /root/ottopdf/user-data.sh
+              yum -y --security update
+              yum -y update aws-cli
+              yum -y install awslogs jq ImageMagick
+              aws configure set default.region ${AWS::Region}
               bash /root/ottopdf/user-data.sh
     Type: AWS::EC2::LaunchTemplate
   publicRoute:
