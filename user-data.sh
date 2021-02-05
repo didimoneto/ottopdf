@@ -4,8 +4,8 @@ INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
 WORKING_DIR=/root/ottopdf
 
 cp -av $WORKING_DIR/awslogs.conf /etc/awslogs/
-cp -av $WORKING_DIR/spot-instance-interruption-notice-handler.conf /etc/init.d/spot-instance-interruption-notice-handler.conf
-cp -av $WORKING_DIR/convert-worker.conf /etc/init.d/convert-worker.conf
+cp -av $WORKING_DIR/spot-instance-interruption-notice-handler.service /etc/systemd/system/spot-instance-interruption-notice-handler.service
+cp -av $WORKING_DIR/convert-worker.service /etc/systemd/system/convert-worker.service
 cp -av $WORKING_DIR/spot-instance-interruption-notice-handler.sh /usr/local/bin/
 cp -av $WORKING_DIR/convert-worker.sh /usr/local/bin
 
@@ -20,6 +20,8 @@ sed -i "s|%SQSQUEUE%|$SQSQUEUE|g" /usr/local/bin/convert-worker.sh
 
 systemctl enable awslogsd.service && systemctl restart awslogsd
 
-sudo systemctl enable spot-instance-interruption-notice-handler.conf.service
-sudo systemctl enable convert-worker.conf.service
-systemctl restart convert-worker.conf.service
+systemctl enable spot-instance-interruption-notice-handler
+systemctl enable convert-worker
+
+systemctl start spot-instance-interruption-notice-handler
+systemctl start convert-worker
