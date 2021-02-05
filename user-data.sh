@@ -18,7 +18,8 @@ sed -i "s|%REGION%|$REGION|g" /usr/local/bin/convert-worker.sh
 sed -i "s|%S3BUCKET%|$S3BUCKET|g" /usr/local/bin/convert-worker.sh
 sed -i "s|%SQSQUEUE%|$SQSQUEUE|g" /usr/local/bin/convert-worker.sh
 
-chkconfig awslogs on && service awslogs restart
+systemctl enable awslogsd.service && systemctl restart awslogsd
 
-bash /usr/local/bin/spot-instance-interruption-notice-handler.sh
-bash /usr/local/bin/convert-worker.sh
+sudo systemctl enable spot-instance-interruption-notice-handler.conf.service
+sudo systemctl enable convert-worker.conf.service
+systemctl restart convert-worker.conf.service
