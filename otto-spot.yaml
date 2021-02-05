@@ -383,6 +383,7 @@ Resources:
               export S3BUCKET=${s3Bucket} 
               export SQSQUEUE=${sqsQueue} 
               export CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
+              chmod +x /root/ottopdf/user-data.sh
               sed -i "s|%REGION%|${AWS::Region}|g" /root/ottopdf/user-data.sh
               bash /root/ottopdf/user-data.sh
     Type: AWS::EC2::LaunchTemplate
