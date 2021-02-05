@@ -383,8 +383,8 @@ Resources:
               export S3BUCKET=${s3Bucket} 
               export SQSQUEUE=${sqsQueue} 
               export CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
-              sed -i "s|%REGION%|${AWS::Region}|g" /root/ec2-spot-labs/sqs-ec2-spot-asg/user-data.sh
-              bash /root/ec2-spot-labs/sqs-ec2-spot-asg/user-data.sh
+              sed -i "s|%REGION%|${AWS::Region}|g" /root/ottopdf/user-data.sh
+              bash /root/ottopdf/user-data.sh
     Type: AWS::EC2::LaunchTemplate
   publicRoute:
     DependsOn:
