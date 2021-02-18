@@ -1,0 +1,65 @@
+name tools
+category Package
+revision 52286
+catalogue latex-tools
+shortdesc The LaTeX standard tools bundle
+longdesc A collection of (variously) simple tools provided as part of
+longdesc the LaTeX required tools distribution, comprising the packages:
+longdesc afterpage, array, bm, calc, dcolumn, delarray, enumerate,
+longdesc fileerr, fontsmpl, ftnright, hhline, indentfirst, layout,
+longdesc longtable, multicol, rawfonts, showkeys, somedefs, tabularx,
+longdesc theorem, trace, varioref, verbatim, xr, and xspace.
+containersize 40892
+containerchecksum fdb0242e5168d0291c9d135961447385f7b70a2ac367b9f5e503ec2d945ac60ad86f66020da1bea88a86465b148e73451f4e19d4ab478144b3ed1323c6b97a14
+doccontainersize 5215060
+doccontainerchecksum b4c3f4e869195beff26ed22189fcff0c4633cd8de604f59fcc6090edc16e135e26844997559c19dfdf28f35360366466f556a3122ec02ab2d9dce8a29adc05ae
+srccontainersize 223352
+srccontainerchecksum f8186ea654a5e0b9521d3969a062d8df6a414294babf4d4891116077fa177847428f2d133a9aa7a85e2d1b2d1dfc6018b79035637c0541a60a54c592024cb740
+runfiles size=98
+ texmf-dist/tex/latex/tools/.tex
+ texmf-dist/tex/latex/tools/afterpage.sty
+ texmf-dist/tex/latex/tools/array-2016-10-06.sty
+ texmf-dist/tex/latex/tools/array.sty
+ texmf-dist/tex/latex/tools/bm.sty
+ texmf-dist/tex/latex/tools/calc.sty
+ texmf-dist/tex/latex/tools/dcolumn.sty
+ texmf-dist/tex/latex/tools/delarray.sty
+ texmf-dist/tex/latex/tools/e.tex
+ texmf-dist/tex/latex/tools/enumerate.sty
+ texmf-dist/tex/latex/tools/fontsmpl.sty
+ texmf-dist/tex/latex/tools/fontsmpl.tex
+ texmf-dist/tex/latex/tools/ftnright.sty
+ texmf-dist/tex/latex/tools/h.tex
+ texmf-dist/tex/latex/tools/hhline.sty
+ texmf-dist/tex/latex/tools/indentfirst.sty
+ texmf-dist/tex/latex/tools/layout.sty
+ texmf-dist/tex/latex/tools/longtable.sty
+ texmf-dist/tex/latex/tools/multicol-2017-04-11.sty
+ texmf-dist/tex/latex/tools/multicol.sty
+ texmf-dist/tex/latex/tools/q.tex
+ texmf-dist/tex/latex/tools/r.tex
+ texmf-dist/tex/latex/tools/rawfonts.sty
+ texmf-dist/tex/latex/tools/s.tex
+ texmf-dist/tex/latex/tools/shellesc.sty
+ texmf-dist/tex/latex/tools/showkeys.sty
+ texmf-dist/tex/latex/tools/somedefs.sty
+ texmf-dist/tex/latex/tools/tabularx.sty
+ texmf-dist/tex/latex/tools/thb.sty
+ texmf-dist/tex/latex/tools/thc.sty
+ texmf-dist/tex/latex/tools/thcb.sty
+ texmf-dist/tex/latex/tools/theorem.sty
+ texmf-dist/tex/latex/tools/thm.sty
+ texmf-dist/tex/latex/tools/thmb.sty
+ texmf-dist/tex/latex/tools/thp.sty
+ texmf-dist/tex/latex/tools/trace.sty
+ texmf-dist/tex/latex/tools/varioref-2016-02-16.sty
+ texmf-dist/tex/latex/tools/varioref.sty
+ texmf-dist/tex/latex/tools/verbatim.sty
+ texmf-dist/tex/latex/tools/verbtest.tex
+ texmf-dist/tex/latex/tools/x.tex
+ texmf-dist/tex/latex/tools/xr.sty
+ texmf-dist/tex/latex/tools/xspace.sty
+catalogue-ctan /macros/latex/required/tools
+catalogue-date 2019-10-03 20:39:08 +0200
+catalogue-license lppl1.3
+catalogue-topics collection

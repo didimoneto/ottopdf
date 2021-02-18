@@ -1,0 +1,51 @@
+name collection-basic
+category Collection
+revision 51558
+shortdesc Essential programs and files
+longdesc These files are regarded as basic for any TeX system, covering
+longdesc plain TeX macros, Computer Modern fonts, and configuration for
+longdesc common drivers; no LaTeX.
+depend texlive.infra
+depend amsfonts
+depend bibtex
+depend cm
+depend colorprofiles
+depend dvipdfmx
+depend dvips
+depend enctex
+depend etex
+depend etex-pkg
+depend glyphlist
+depend graphics-def
+depend gsftopk
+depend hyph-utf8
+depend hyphen-base
+depend hyphenex
+depend ifluatex
+depend ifplatform
+depend ifxetex
+depend knuth-lib
+depend knuth-local
+depend kpathsea
+depend lua-alt-getopt
+depend luatex
+depend makeindex
+depend metafont
+depend mflogo
+depend mfware
+depend pdftex
+depend plain
+depend tetex
+depend tex
+depend tex-ini-files
+depend texlive-common
+depend texlive-docindex
+depend texlive-en
+depend texlive-msg-translations
+depend texlive-scripts
+depend tlshell
+depend unicode-data
+depend updmap-map
+depend xdvi
+containersize 644
+containerchecksum cfe97f315159b9f5732cdc417b16c18d37443d13389abee846d690c13bf5ea0cadbce78b77e78154e6adc3bfbce1d049a8302147c5a9defa9795ba98637c04b0

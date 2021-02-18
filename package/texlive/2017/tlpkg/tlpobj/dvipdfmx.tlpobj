@@ -1,0 +1,38 @@
+name dvipdfmx
+category TLCore
+revision 50602
+shortdesc An extended version of dvipdfm
+longdesc Dvipdfmx (formerly dvipdfm-cjk) is a development of dvipdfm
+longdesc created to support multi-byte character encodings and large
+longdesc character sets for East Asian languages. Dvipdfmx, if "called"
+longdesc with the name dvipdfm, operates in a "dvipdfm compatibility"
+longdesc mode, so that users of the both packages need only keep one
+longdesc executable. A secondary design goal is to support as many "PDF"
+longdesc features as does pdfTeX. The current version of the package is
+longdesc no longer maintained on CTAN as a separate entity; development
+longdesc now takes place within the TeX Live framework, and it is no
+longdesc longer available as a separate package. For download, support,
+longdesc and other information, please see TeX Live.
+depend glyphlist
+depend dvipdfmx.ARCH
+postaction script file=tlpkg/tlpostcode/dvipdfmx.pl
+containersize 26760
+containerchecksum eded65e852efd5caa8cad6227894b5d76b190baed17678a0a89a90ec14ad0853abe0b8bf09d2b989af05b05c47dd1167ccacfb18aacbfd70915a483152904fc0
+doccontainersize 3123584
+doccontainerchecksum 332955e7a57969de8647845f0d7a36bae6bb2fe8bc431533198c7225d5bf67ea18228a2c71bc88581fc3e72fcaef366002ea58b4ab54f3f8591ff7a3d4888f1a
+runfiles size=40
+ texmf-dist/dvipdfmx/dvipdfmx.cfg
+ texmf-dist/fonts/cmap/dvipdfmx/EUC-UCS2
+ texmf-dist/fonts/cmap/dvipdfmx/README
+ texmf-dist/fonts/cmap/dvipdfmx/UTF8-UCS2
+ texmf-dist/fonts/map/dvipdfmx/cid-x.map
+ texmf-dist/fonts/map/dvipdfmx/ckx.map
+ tlpkg/tlpostcode/dvipdfmx.pl
+catalogue-alias xdvipdfmx
+catalogue-contact-bugs http://lists.tug.org/tex-k
+catalogue-contact-home http://project.ktug.or.kr/dvipdfmx/
+catalogue-contact-repository https://tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/
+catalogue-contact-support http://lists.tug.org/tex-k
+catalogue-date 2019-02-03 12:23:27 +0100
+catalogue-license gpl
+catalogue-topics dvi-pdf

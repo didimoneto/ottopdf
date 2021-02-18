@@ -1,0 +1,24 @@
+name was
+category Package
+revision 21439
+shortdesc A collection of small packages by Walter Schmidt
+longdesc A bundle of packages that arise in the author's area of
+longdesc interest: compliance of maths typesetting with ISO standards;
+longdesc symbols that work in both maths and text modes commas for both
+longdesc decimal separator and maths; and upright Greek letters in
+longdesc maths.
+containersize 3092
+containerchecksum e3dec504da2dd28534872b4363695d797a874a0af5c2a77e6559a2765f6150cc50614b8905c90faa6fb9fd54d9634a9ddff148564904b1454f21d3fbd21918dd
+doccontainersize 578872
+doccontainerchecksum 24cc3a8931fe48134810ffe626789139a821585f0d359a177c56ae5a442482fb9d36f344061128ac185469b97c4c3f440ad02ebc7135366253cd9bbcf99895bc
+srccontainersize 9388
+srccontainerchecksum 507ed77f8a5a119c16fcb9478a559f516a2e612893941f8854e4945968ef5b44ccab641f1737c745b33209828a4541e3615dd46f304b5e2f5b29c5282eeeccef
+runfiles size=6
+ texmf-dist/tex/latex/was/fixmath.sty
+ texmf-dist/tex/latex/was/gensymb.sty
+ texmf-dist/tex/latex/was/icomma.sty
+ texmf-dist/tex/latex/was/upgreek.sty
+catalogue-ctan /macros/latex/contrib/was
+catalogue-date 2016-06-24 19:18:15 +0200
+catalogue-license collection
+catalogue-topics collection

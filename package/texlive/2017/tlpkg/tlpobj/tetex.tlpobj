@@ -1,0 +1,76 @@
+name tetex
+category TLCore
+revision 52454
+shortdesc scripts and files originally from teTeX
+longdesc Includes both core utilities such as fmtutil and updmap, and
+longdesc rarely-used programs such as allec and dvi2fax. Some
+longdesc functionality is now better provided by tlmgr, such as
+longdesc texconfig and texlinks, but everything here is still supported.
+depend tetex.ARCH
+execute addMap mathpple.map
+containersize 71840
+containerchecksum ef084badcc02fae1669fd07654e241d99be1a78011f351aea7acab95d92760ea8884c9a5c017e95ee7449df17876254e95f0363174f0fd6cc2ecae63a3a14487
+doccontainersize 525320
+doccontainerchecksum c79bfeab24c0c59f5e4a365843765be5b3f53da6c472bf710817540bec2b5dd080fe9f1715ecf5a83881606f9a0c8fd37441a01f4d6f210c247fb959e90f46b5
+runfiles size=127
+ texmf-dist/dvips/tetex/config.builtin35
+ texmf-dist/dvips/tetex/config.dfaxhigh
+ texmf-dist/dvips/tetex/config.dfaxlo
+ texmf-dist/dvips/tetex/config.download35
+ texmf-dist/dvips/tetex/config.gsftopk
+ texmf-dist/dvips/tetex/config.maxmem
+ texmf-dist/dvips/tetex/config.outline
+ texmf-dist/dvips/tetex/config.pdf
+ texmf-dist/dvips/tetex/config.pk
+ texmf-dist/dvips/tetex/config.www
+ texmf-dist/fonts/enc/dvips/tetex/09fbbfac.enc
+ texmf-dist/fonts/enc/dvips/tetex/0ef0afca.enc
+ texmf-dist/fonts/enc/dvips/tetex/10037936.enc
+ texmf-dist/fonts/enc/dvips/tetex/1b6d048e.enc
+ texmf-dist/fonts/enc/dvips/tetex/71414f53.enc
+ texmf-dist/fonts/enc/dvips/tetex/74afc74c.enc
+ texmf-dist/fonts/enc/dvips/tetex/aae443f0.enc
+ texmf-dist/fonts/enc/dvips/tetex/b6a4d7c7.enc
+ texmf-dist/fonts/enc/dvips/tetex/bbad153f.enc
+ texmf-dist/fonts/enc/dvips/tetex/d9b29452.enc
+ texmf-dist/fonts/enc/dvips/tetex/f7b6d320.enc
+ texmf-dist/fonts/enc/dvips/tetex/mtex.enc
+ texmf-dist/fonts/map/dvips/tetex/Makefile
+ texmf-dist/fonts/map/dvips/tetex/README
+ texmf-dist/fonts/map/dvips/tetex/base14flags.ltx
+ texmf-dist/fonts/map/dvips/tetex/base14flags.tex
+ texmf-dist/fonts/map/dvips/tetex/dvipdfm35.map
+ texmf-dist/fonts/map/dvips/tetex/dvips35.map
+ texmf-dist/fonts/map/dvips/tetex/mathpple.map
+ texmf-dist/fonts/map/dvips/tetex/pdftex35.map
+ texmf-dist/fonts/map/dvips/tetex/ps2pk35.map
+ texmf-dist/scripts/texlive/allcm.sh
+ texmf-dist/scripts/texlive/allneeded.sh
+ texmf-dist/scripts/texlive/dvi2fax.sh
+ texmf-dist/scripts/texlive/dvired.sh
+ texmf-dist/scripts/texlive/fmtutil-sys.sh
+ texmf-dist/scripts/texlive/fmtutil-user.sh
+ texmf-dist/scripts/texlive/fmtutil.pl
+ texmf-dist/scripts/texlive/kpsetool.sh
+ texmf-dist/scripts/texlive/kpsewhere.sh
+ texmf-dist/scripts/texlive/mktexlsr.pl
+ texmf-dist/scripts/texlive/texconfig-dialog.sh
+ texmf-dist/scripts/texlive/texconfig-sys.sh
+ texmf-dist/scripts/texlive/texconfig.sh
+ texmf-dist/scripts/texlive/texlinks.sh
+ texmf-dist/scripts/texlive/updmap-sys.sh
+ texmf-dist/scripts/texlive/updmap-user.sh
+ texmf-dist/scripts/texlive/updmap.pl
+ texmf-dist/texconfig/README
+ texmf-dist/texconfig/g/generic
+ texmf-dist/texconfig/tcfmgr
+ texmf-dist/texconfig/tcfmgr.map
+ texmf-dist/texconfig/v/vt100
+ texmf-dist/texconfig/x/xterm
+ texmf-dist/web2c/updmap.cfg
+catalogue-contact-home http://tug.org/teTeX/
+catalogue-ctan /obsolete/systems/unix/teTeX
+catalogue-date 2017-04-18 05:31:40 +0200
+catalogue-license other-free
+catalogue-topics distribution obsolete
+catalogue-version 3.0

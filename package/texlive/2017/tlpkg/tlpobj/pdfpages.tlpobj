@@ -1,0 +1,33 @@
+name pdfpages
+category Package
+revision 52154
+shortdesc Include PDF documents in LaTeX
+longdesc This package simplifies the inclusion of external multi-page
+longdesc PDF documents in LaTeX documents. Pages may be freely selected
+longdesc and similar to psnup it is possible to put several logical
+longdesc pages onto each sheet of paper. Furthermore a lot of hypertext
+longdesc features like hyperlinks and article threads are provided. The
+longdesc package supports pdfTeX (pdfLaTeX) and VTeX. With VTeX it is
+longdesc even possible to use this package to insert PostScript files,
+longdesc in addition to PDF files.
+depend eso-pic
+containersize 13748
+containerchecksum 91e72e7247d026ddd7c598a5ee3d79bbde2dde920567cfe6d60601111d21e1663ada42c39fb951135b76f65e4186de53c0e1ca5c8846649c3a8abdacd5ab9643
+doccontainersize 314788
+doccontainerchecksum a04d593ee79a71d79409b475c169741bfb7a5ce2e3a1b1382dc20a8faf424324c5563161a13893ef4ff4da7b9b5513d63464fe3726169845bb402169b2523e3d
+srccontainersize 34292
+srccontainerchecksum 0e7d01cb7bf81f110ea073caf547ce75cf92236a5df45425fb6dcb11baebaaaa6f8582f432bc0c5d574ece69f03f9898d6d0d4894225444f240688b301ce3730
+runfiles size=24
+ texmf-dist/tex/latex/pdfpages/pdfpages.sty
+ texmf-dist/tex/latex/pdfpages/ppdvipdfmx.def
+ texmf-dist/tex/latex/pdfpages/ppdvips.def
+ texmf-dist/tex/latex/pdfpages/ppluatex.def
+ texmf-dist/tex/latex/pdfpages/ppnull.def
+ texmf-dist/tex/latex/pdfpages/pppdftex.def
+ texmf-dist/tex/latex/pdfpages/ppvtex.def
+ texmf-dist/tex/latex/pdfpages/ppxetex.def
+catalogue-ctan /macros/latex/contrib/pdfpages
+catalogue-date 2019-09-22 00:29:09 +0200
+catalogue-license lppl1.3c
+catalogue-topics graphics-incl
+catalogue-version 0.5n

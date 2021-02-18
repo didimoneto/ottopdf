@@ -1,0 +1,28 @@
+name ifetex
+category Package
+revision 47231
+shortdesc Provides \ifetex switch
+longdesc The package provides the switch \ifetex which indicates whether
+longdesc e-TeX is available or not. The package can be loaded as LaTeX
+longdesc package using \usepackage{ifetex} or in plain TeX using \input
+longdesc ifetex. In either case it aborts silently if the \ifetex macro
+longdesc is already defined. The package's test is whether \eTeXversion
+longdesc is defined as a primitive; if it is, the package assumes e-TeX
+longdesc features are available.
+containersize 1448
+containerchecksum 0f814eded272bafb38e04d7df845f002382c1f87854f8eb8dbe41e964383d3390f5f44973d0a23461568700b7a3ed0f837afaee360c996fe17fd7b2473256cbf
+doccontainersize 145448
+doccontainerchecksum 34741cc3514404ed1327c8c621926cdd2c24a5ca655c24b9e6157e0623d61b4e2d9bbb7df3bb396251e564d59eeafc9eeccc5509914eeda931a43b9d8b23df94
+srccontainersize 3380
+srccontainerchecksum 4904d2d78dc8cf67cb3d4b2498b391f290addac86d07fba24a76dc16446ed10b18061dd32e4890fd0344e10bc02302a13cf3a16cedf9033591f35f0bb4ddd00d
+runfiles size=2
+ texmf-dist/tex/latex/ifetex/ifetex.sty
+ texmf-dist/tex/plain/ifetex/ifetex.tex
+catalogue-contact-bugs https://bitbucket.org/martin_scharrer/ifetex/issues
+catalogue-contact-home https://bitbucket.org/martin_scharrer/ifetex/
+catalogue-contact-repository https://bitbucket.org/martin_scharrer/ifetex/src
+catalogue-ctan /macros/latex/contrib/ifetex
+catalogue-date 2018-03-31 21:11:18 +0200
+catalogue-license lppl1.3
+catalogue-topics env-query
+catalogue-version 1.2a

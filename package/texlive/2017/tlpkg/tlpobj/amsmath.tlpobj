@@ -1,0 +1,40 @@
+name amsmath
+category Package
+revision 52372
+catalogue latex-amsmath
+shortdesc AMS mathematical facilities for LaTeX
+longdesc The package provides the principal packages in the AMS-LaTeX
+longdesc distribution. It adapts for use in LaTeX most of the
+longdesc mathematical features found in AMS-TeX; it is highly
+longdesc recommended as an adjunct to serious mathematical typesetting
+longdesc in LaTeX. When amsmath is loaded, AMS-LaTeX packages amsbsy
+longdesc (for bold symbols), amsopn (for operator names) and amstext
+longdesc (for text embedded in mathematics) are also loaded. amsmath is
+longdesc part of the LaTeX required distribution; however, several
+longdesc contributed packages add still further to its appeal; examples
+longdesc are empheq, which provides functions for decorating and
+longdesc highlighting mathematics, and ntheorem, for specifying theorem
+longdesc (and similar) definitions.
+containersize 30252
+containerchecksum eb80cfebfbfba8403c2063fefbd9f779ea3d547fc6e7d15f47def3a77ec327e2674fe68d9303f7a3600c04be563f62272e2919387fb1c757246b8d4c33e4c24d
+doccontainersize 2323932
+doccontainerchecksum 4b426d8e89c6291d7325e665d2de8d33fa5552d348478c34495bff3afee29f1ce12a8c37c60d07f555d381099707b1378923ddbe12bbe52afbd33e1db5001ae3
+srccontainersize 63940
+srccontainerchecksum 8571ad765aa182bafdb6dd257020595e454222d00314eaf5acf08285383dcfa99fd900a74ce5b87446430c8ec158f001b79da9f4fe3e509e6d24b7db7f26f7d0
+runfiles size=69
+ texmf-dist/tex/latex/amsmath/amsbsy.sty
+ texmf-dist/tex/latex/amsmath/amscd.sty
+ texmf-dist/tex/latex/amsmath/amsgen.sty
+ texmf-dist/tex/latex/amsmath/amsmath-2018-12-01.sty
+ texmf-dist/tex/latex/amsmath/amsmath.sty
+ texmf-dist/tex/latex/amsmath/amsopn.sty
+ texmf-dist/tex/latex/amsmath/amstex.sty
+ texmf-dist/tex/latex/amsmath/amstext.sty
+ texmf-dist/tex/latex/amsmath/amsxtra.sty
+catalogue-also nath mathtools
+catalogue-contact-home http://www.ams.org/tex/amslatex.html
+catalogue-ctan /macros/latex/required/amsmath
+catalogue-date 2019-10-13 16:16:31 +0200
+catalogue-license lppl1.3c
+catalogue-topics maths
+catalogue-version 2019-10-01 PL1

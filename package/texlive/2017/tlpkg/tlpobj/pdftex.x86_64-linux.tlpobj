@@ -1,0 +1,11 @@
+name pdftex.x86_64-linux
+category TLCore
+revision 50700
+shortdesc x86_64-linux files of pdftex
+containersize 831192
+containerchecksum 0226d6ea2c0a3bc2e8fc4504469da9f1e24d68cd7804b56c9ca21bf59b7b5de439d5a7a0a1535d8daff363a063358fe0701ce3993f6d23a8829cd97cdebe2d90
+binfiles arch=x86_64-linux size=545
+ bin/x86_64-linux/etex
+ bin/x86_64-linux/pdfetex
+ bin/x86_64-linux/pdftex
+ bin/x86_64-linux/simpdftex

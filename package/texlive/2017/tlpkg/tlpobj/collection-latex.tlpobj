@@ -1,0 +1,37 @@
+name collection-latex
+category Collection
+revision 41614
+shortdesc LaTeX fundamental packages
+longdesc These packages are either mandated by the core LaTeX team, or
+longdesc very widely used and strongly recommended in practice.
+depend collection-basic
+depend ae
+depend amscls
+depend amsmath
+depend babel
+depend babel-english
+depend babelbib
+depend carlisle
+depend colortbl
+depend fancyhdr
+depend fix2col
+depend geometry
+depend graphics
+depend graphics-cfg
+depend hyperref
+depend latex
+depend latex-bin
+depend latex-fonts
+depend latexconfig
+depend ltxmisc
+depend mfnfss
+depend mptopdf
+depend natbib
+depend oberdiek
+depend pslatex
+depend psnfss
+depend pspicture
+depend tools
+depend url
+containersize 528
+containerchecksum b1aae6d9b6a16813d76ee4c4bff813120784f856574b83aad156bb6bd0edc8815688159f78a5fa74dc1662c02c94c675e8caa3f654e933673f0424e8f1ead80f

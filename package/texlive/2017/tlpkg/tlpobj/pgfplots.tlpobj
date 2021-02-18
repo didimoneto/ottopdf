@@ -1,0 +1,136 @@
+name pgfplots
+category Package
+revision 47373
+shortdesc Create normal/logarithmic plots in two and three dimensions
+longdesc PGFPlots draws high-quality function plots in normal or
+longdesc logarithmic scaling with a user-friendly interface directly in
+longdesc TeX. The user supplies axis labels, legend entries and the plot
+longdesc coordinates for one or more plots and PGFPlots applies axis
+longdesc scaling, computes any logarithms and axis ticks and draws the
+longdesc plots, supporting line plots, scatter plots, piecewise constant
+longdesc plots, bar plots, area plots, mesh-- and surface plots and some
+longdesc more. Pgfplots is based on PGF/TikZ (PGF); it runs equally for
+longdesc LaTeX/TeX/ConTeXt.
+containersize 520400
+containerchecksum 6a56f591562baac1b6256eb5c888c4cbfdca5762d4141ef4773ceca06ffbaccf3e0d12c35818b9447a1c782113c3c2a622dee0ee74e9a5b97634af0603c8c095
+doccontainersize 13287264
+doccontainerchecksum 1167fe761139de816533728f8b774f802190a1d58df979d192d3fd92427dc32d12ae0c176315de8c878d7f1e4ed58d8e7c40c5b794f8b75e813692c156dcba7b
+srccontainersize 1706748
+srccontainerchecksum ec594de33aab4206bf4c38808fca697f144337031677ae056fc05ab910e6886389cd9f283a299071dc488b41e60c03d27108661ed2d5f1c124f57a87e28f3999
+runfiles size=901
+ texmf-dist/scripts/pgfplots/matlab2pgfplots.m
+ texmf-dist/scripts/pgfplots/matlab2pgfplots.sh
+ texmf-dist/scripts/pgfplots/pgf2pdf.sh
+ texmf-dist/scripts/pgfplots/pgfplots.py
+ texmf-dist/tex/context/third/pgfplots/t-pgfplots.tex
+ texmf-dist/tex/context/third/pgfplots/t-pgfplotstable.tex
+ texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.colorbrewer.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.colortol.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorbrewer.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolortol.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.colormaps.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.dateplot.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.external.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetween.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.groupplots.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.patchplots.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.polar.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.smithchart.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.statistics.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.ternary.code.tex
+ texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.units.code.tex
+ texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+ texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex
+ texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex
+ texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex
+ texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex
+ texmf-dist/tex/generic/pgfplots/lua/pgfplots.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplots/binary.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplots/colormap.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplots/meshplothandler.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplots/pgfplotstexio.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplots/pgfplotsutil.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplots/plothandler.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplots/statistics.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplots/streamer.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplotsoldpgfsupp/luamath/functions.lua
+ texmf-dist/tex/generic/pgfplots/lua/pgfplotsoldpgfsupp/luamath/parser.lua
+ texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.code.tex
+ texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.coltype.code.tex
+ texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_leq.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_misc.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfcoreexternal.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfcoreimage.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfcorelayers.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfcorescopes.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfkeys.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfkeysfiltered.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgflibraryfpu.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgflibraryintersections.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgflibraryluamath.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgflibraryplothandlers.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfmanual.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfmanual.pdflinks.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfmanual.prettyprinter.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfmathfloat.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_tikzexternal.sty
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_tikzexternalshared.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_tikzlibraryexternal.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_trig_format.code.tex
+ texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfsys-luatexpatch.def
+ texmf-dist/tex/generic/pgfplots/oldpgfplotscompatib/tikzlibrarydateplot.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.softclip.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex
+ texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex
+ texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+ texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-dvipdfmx.def
+ texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-dvips.def
+ texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-luatex.def
+ texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-luatexpatch.def
+ texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def
+ texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-xetex.def
+ texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex
+ texmf-dist/tex/generic/pgfplots/test/pgfplots.assert.code.tex
+ texmf-dist/tex/generic/pgfplots/test/pgfplots.assert.sty
+ texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+ texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex
+ texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+ texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+ texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+ texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex
+ texmf-dist/tex/latex/pgfplots/bugtracker.sty
+ texmf-dist/tex/latex/pgfplots/libs/tikzlibrarypgfplots.clickable.code.tex
+ texmf-dist/tex/latex/pgfplots/libs/tikzlibrarypgfplotsclickable.code.tex
+ texmf-dist/tex/latex/pgfplots/pgfplots.sty
+ texmf-dist/tex/latex/pgfplots/pgfplotstable.sty
+ texmf-dist/tex/latex/pgfplots/pgfregressiontest.sty
+ texmf-dist/tex/plain/pgfplots/pgfplots.tex
+ texmf-dist/tex/plain/pgfplots/pgfplotstable.tex
+catalogue-also pst-plot pgfplotstable
+catalogue-contact-bugs https://sourceforge.net/p/pgfplots/bugs/?source=navbar
+catalogue-contact-home http://pgfplots.sourceforge.net/
+catalogue-contact-repository http://pgfplots.sourceforge.net/
+catalogue-contact-support https://sourceforge.net/projects/pgfplots/
+catalogue-ctan /graphics/pgf/contrib/pgfplots
+catalogue-date 2018-04-07 06:21:57 +0200
+catalogue-license gpl3
+catalogue-topics graphics-plot pgf-tikz
+catalogue-version 1.16

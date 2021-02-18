@@ -1,0 +1,15 @@
+name latexconfig
+category Package
+revision 52186
+shortdesc configuration files for LaTeX-related formats
+containersize 4124
+containerchecksum 8251c3786d2dcda83fcd36a8f746e2601c72986e6c27396aa6707dcadd16c0bfbb65adb9c7f28035b019618b046c1b3f386beb206f877bad95ee4ff85cfd2cde
+runfiles size=8
+ texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ texmf-dist/tex/latex/latexconfig/hyperref.cfg
+ texmf-dist/tex/latex/latexconfig/latex.ini
+ texmf-dist/tex/latex/latexconfig/lualatexiniconfig.tex
+ texmf-dist/tex/latex/latexconfig/lualatexquotejobname.lua
+ texmf-dist/tex/latex/latexconfig/lualatexquotejobname.tex
+ texmf-dist/tex/latex/latexconfig/mllatex.ini
+ texmf-dist/tex/latex/latexconfig/pdflatex.ini

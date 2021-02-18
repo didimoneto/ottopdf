@@ -1,0 +1,8 @@
+name bibtex.x86_64-linux
+category Package
+revision 50281
+shortdesc x86_64-linux files of bibtex
+containersize 73656
+containerchecksum 5052866f519b8e5468e89120815ab40c793d55405d65a07a958815dc6d8cacdcc1d61818585aa12e7947b6698e2f772b12b916d193f720dd5a74f485964d0a22
+binfiles arch=x86_64-linux size=42
+ bin/x86_64-linux/bibtex

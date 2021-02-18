@@ -1,0 +1,19 @@
+name kpathsea.x86_64-linux
+category TLCore
+revision 50281
+shortdesc x86_64-linux files of kpathsea
+containersize 47944
+containerchecksum 1df82d2ed4eb65c82e41a16e64144ece82b81dac2f88952cb9ef41263db9d33e0f4fcd2f6b6f4fda60572396c494b5fa3a3dbacc4df7b90ac2b7da785351c99f
+binfiles arch=x86_64-linux size=40
+ bin/x86_64-linux/kpseaccess
+ bin/x86_64-linux/kpsereadlink
+ bin/x86_64-linux/kpsestat
+ bin/x86_64-linux/kpsewhich
+ bin/x86_64-linux/mkocp
+ bin/x86_64-linux/mkofm
+ bin/x86_64-linux/mktexfmt
+ bin/x86_64-linux/mktexlsr
+ bin/x86_64-linux/mktexmf
+ bin/x86_64-linux/mktexpk
+ bin/x86_64-linux/mktextfm
+ bin/x86_64-linux/texhash
