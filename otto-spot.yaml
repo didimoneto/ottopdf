@@ -502,6 +502,11 @@ Resources:
       NotificationConfiguration:
         QueueConfigurations:
         - Event: s3:ObjectCreated:*
+          Filter:
+            S3Key:
+              Rules:
+                - Name: suffix
+                  Value: .zip
           Queue:
             Fn::GetAtt:
             - sqsQueue
