@@ -48,11 +48,11 @@ while sleep 5; do
 
     aws autoscaling set-instance-protection --instance-ids $INSTANCE_ID --auto-scaling-group-name $AUTOSCALINGGROUP --protected-from-scale-in
 
-    aws s3 cp s3://$S3BUCKET/$INPUT /tmp/latex
+    aws s3 cp s3://$S3BUCKET/$INPUT /tmp/latex/
 
-    unzip /tmp/latex/compile.zip -d /tmp/latex
+    unzip /tmp/latex/compile.zip -d /tmp/latex/
 
-    latexmk -interaction=batchmode -shell-escape -pdf -jobname=laudo_qualificacao -output-directory=/tmp/latex /tmp/latex/template.tex -f
+    latexmk -interaction=batchmode -shell-escape -pdf -jobname=laudo_qualificacao -output-directory=/tmp/latex/ /tmp/latex/template.tex -f
 #    convert /tmp/$INPUT /tmp/$FNAME.pdf
 
     logger "$0: Convert done. Copying to S3 and cleaning up"
