@@ -52,14 +52,16 @@ while sleep 5; do
 
     unzip /tmp/latex/compile.zip -d /tmp/latex/
 
-    latexmk -interaction=batchmode -shell-escape -pdf -jobname=laudo_qualificacao -output-directory=/tmp/latex/ /tmp/latex/template.tex -f
+    cd /tmp/latex/
+
+    latexmk -interaction=batchmode -shell-escape -pdf -output-directory=/tmp/latex /tmp/latex/template.tex -f
 #    convert /tmp/$INPUT /tmp/$FNAME.pdf
 
     logger "$0: Convert done. Copying to S3 and cleaning up"
 
     logger "$0: Running: aws s3 cp /tmp/laudo_qualificacao.pdf s3://$S3BUCKET"
 
-    aws s3 cp /tmp/laudo_qualificacao.pdf s3://$S3BUCKET
+    aws s3 cp /tmp/latex/template.pdf s3://arkmeds-files
 
 #    rm -f /tmp/$INPUT /tmp/laudo_qualificacao.pdf
 
