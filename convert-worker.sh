@@ -61,7 +61,7 @@ while sleep 5; do
 
     logger "$0: Running: aws s3 cp /tmp/laudo_qualificacao.pdf s3://$S3BUCKET"
 
-    aws s3 cp /tmp/latex/template.pdf s3://arkmeds-files
+    aws s3 cp /tmp/latex/template.pdf s3://$S3BUCKET
 
 #    rm -f /tmp/$INPUT /tmp/laudo_qualificacao.pdf
 
