@@ -3,6 +3,7 @@
 INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
 REGION=%REGION%
 S3BUCKET=%S3BUCKET%
+S3BUCKETDESTINATION=arkmeds-latex-files-dev
 SQSQUEUE=%SQSQUEUE%
 AUTOSCALINGGROUP=$(aws ec2 describe-tags --filters "Name=resource-id,Values=$INSTANCE_ID" "Name=key,Values=aws:autoscaling:groupName" | jq -r '.Tags[0].Value')
 
@@ -35,11 +36,10 @@ while sleep 5; do
   INPUT=$(echo "$BODY" | jq -r '.Records[0] | .s3.object.key')
   FNAME=$(echo $INPUT | rev | cut -f2 -d"." | rev | tr '[:upper:]' '[:lower:]')
   FEXT=$(echo $INPUT | rev | cut -f1 -d"." | rev | tr '[:upper:]' '[:lower:]')
-  PATHFILE=${INPUT=%/*}
 
   if [ "$FEXT" = "zip" ]; then
 
-    logger "$0: Found work to convert. Details: INPUT=$INPUT, FNAME=$FNAME, FEXT=$FEXT, PATHFILE=$PATHFILE"
+    logger "$0: Found work to convert. Details: INPUT=$INPUT, FNAME=$FNAME, FEXT=$FEXT"
 
     logger "$0: Running: aws autoscaling set-instance-protection --instance-ids $INSTANCE_ID --auto-scaling-group-name $AUTOSCALINGGROUP --protected-from-scale-in"
 
@@ -55,14 +55,18 @@ while sleep 5; do
 
     cd /tmp/latex/
 
+    PATHFILE=$(find /tmp/latex/tmp/ -name '*.txt' -exec cat {} \;)
+
     latexmk -interaction=batchmode -shell-escape -pdf -output-directory=/tmp/latex /tmp/latex/template.tex -f
 #    convert /tmp/$INPUT /tmp/$FNAME.pdf
 
     logger "$0: Convert done. Copying to S3 and cleaning up"
 
-    logger "$0: Running: aws s3 cp /tmp/laudo_qualificacao.pdf s3://$S3BUCKET"
+    logger "$0: Running: aws s3 cp /tmp/latex/laudo_qualificacao.pdf s3://$S3BUCKETDESTINATION/$PATHFILE"
 
-    aws s3 cp /tmp/latex/template.pdf s3://arkmeds-latex-files-dev/$PATHFILE
+    cp /tmp/latex/template.pdf /tmp/latex/laudo_qualificacao.pdf
+
+    aws s3 cp /tmp/latex/laudo_qualificacao.pdf s3://$S3BUCKETDESTINATION/$PATHFILE
 
 #    rm -f /tmp/$INPUT /tmp/laudo_qualificacao.pdf
 
