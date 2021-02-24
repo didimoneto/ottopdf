@@ -35,10 +35,11 @@ while sleep 5; do
   INPUT=$(echo "$BODY" | jq -r '.Records[0] | .s3.object.key')
   FNAME=$(echo $INPUT | rev | cut -f2 -d"." | rev | tr '[:upper:]' '[:lower:]')
   FEXT=$(echo $INPUT | rev | cut -f1 -d"." | rev | tr '[:upper:]' '[:lower:]')
+  PATHFILE=${INPUT=%/*}
 
   if [ "$FEXT" = "zip" ]; then
 
-    logger "$0: Found work to convert. Details: INPUT=$INPUT, FNAME=$FNAME, FEXT=$FEXT"
+    logger "$0: Found work to convert. Details: INPUT=$INPUT, FNAME=$FNAME, FEXT=$FEXT, PATHFILE=$PATHFILE"
 
     logger "$0: Running: aws autoscaling set-instance-protection --instance-ids $INSTANCE_ID --auto-scaling-group-name $AUTOSCALINGGROUP --protected-from-scale-in"
 
@@ -61,7 +62,7 @@ while sleep 5; do
 
     logger "$0: Running: aws s3 cp /tmp/laudo_qualificacao.pdf s3://$S3BUCKET"
 
-    aws s3 cp /tmp/latex/template.pdf s3://arkmeds-latex-files-dev/$INPUT
+    aws s3 cp /tmp/latex/template.pdf s3://arkmeds-latex-files-dev/$PATHFILE
 
 #    rm -f /tmp/$INPUT /tmp/laudo_qualificacao.pdf
 
