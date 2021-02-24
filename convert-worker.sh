@@ -68,7 +68,7 @@ while sleep 5; do
 
     aws s3 cp /tmp/latex/laudo_qualificacao.pdf s3://$S3BUCKETDESTINATION/$PATHFILE
 
-#    rm -f /tmp/$INPUT /tmp/laudo_qualificacao.pdf
+    rm -rf /tmp/latex/*
 
     # pretend to do work for 60 seconds in order to catch the scale in protection
     sleep 60
