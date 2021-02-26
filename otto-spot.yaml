@@ -95,7 +95,7 @@ Parameters:
     Description: Desired capacity
     Type: Number
   maxSize:
-    Default: 2
+    Default: 1
     Description: Maximum capacity
     Type: Number
   minSize:
@@ -210,7 +210,7 @@ Resources:
           Namespace: AWS/SQS
           Statistic: Sum
           Unit: Count
-        TargetValue: 2
+        TargetValue: 1
     Type: AWS::AutoScaling::ScalingPolicy
   autoScalingServiceLinkedRole:
     Properties:
