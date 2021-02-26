@@ -16,6 +16,7 @@ sed -i "s|us-east-1|$REGION|g" /etc/awslogs/awscli.conf
 sed -i "s|%CLOUDWATCHLOGSGROUP%|$CLOUDWATCHLOGSGROUP|g" /etc/awslogs/awslogs.conf
 sed -i "s|%REGION%|$REGION|g" /usr/local/bin/convert-worker.sh
 sed -i "s|%S3BUCKET%|$S3BUCKET|g" /usr/local/bin/convert-worker.sh
+sed -i "s|%S3BUCKETDESTINATION%|$S3BUCKETDESTINATION|g" /usr/local/bin/convert-worker.sh
 sed -i "s|%SQSQUEUE%|$SQSQUEUE|g" /usr/local/bin/convert-worker.sh
 
 systemctl enable awslogsd.service && systemctl restart awslogsd

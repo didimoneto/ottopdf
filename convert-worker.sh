@@ -3,7 +3,7 @@
 INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
 REGION=%REGION%
 S3BUCKET=%S3BUCKET%
-S3BUCKETDESTINATION=arkmeds-latex-files-dev
+S3BUCKETDESTINATION=%S3BUCKETDESTINATION%
 SQSQUEUE=%SQSQUEUE%
 AUTOSCALINGGROUP=$(aws ec2 describe-tags --filters "Name=resource-id,Values=$INSTANCE_ID" "Name=key,Values=aws:autoscaling:groupName" | jq -r '.Tags[0].Value')
 

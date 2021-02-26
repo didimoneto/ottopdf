@@ -373,8 +373,9 @@ Resources:
               yum -y install git
               cd /root && git clone https://github.com/didimoneto/ottopdf.git
               export REGION=${AWS::Region} 
-              export S3BUCKET=${s3Bucket} 
-              export SQSQUEUE=${sqsQueue} 
+              export S3BUCKET=${s3Bucket}
+              export S3BUCKETDESTINATION=arkmeds-latex-files-dev
+              export SQSQUEUE=${sqsQueue}
               export CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
               chmod +x /root/ottopdf/user-data.sh
               yum -y --security update
