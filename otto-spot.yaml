@@ -91,11 +91,11 @@ Outputs:
       Ref: vpc
 Parameters:
   desiredCapacity:
-    Default: 1
+    Default: 0
     Description: Desired capacity
     Type: Number
   maxSize:
-    Default: 1
+    Default: 2
     Description: Maximum capacity
     Type: Number
   minSize:
