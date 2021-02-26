@@ -99,7 +99,7 @@ Parameters:
     Description: Maximum capacity
     Type: Number
   minSize:
-    Default: 1
+    Default: 0
     Description: Mininum capacity
     Type: Number
 Resources:
