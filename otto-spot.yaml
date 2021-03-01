@@ -371,20 +371,20 @@ Resources:
             !Sub |
               #!/bin/bash -xe
               yum -y install git
-              cd /root && git clone https://github.com/didimoneto/ottopdf.git
+              cd /root && git clone https://gitlab.com/otto20/compile-spot-sqs.git
               export REGION=${AWS::Region} 
               export S3BUCKET=${s3Bucket}
               export S3BUCKETDESTINATION=arkmeds-latex-files
               export SQSQUEUE=${sqsQueue}
               export CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
-              chmod +x /root/ottopdf/user-data.sh
+              chmod +x /root/compile-spot-sqs/user-data.sh
               yum -y --security update
               yum -y update aws-cli
               yum -y install awslogs jq ImageMagick
               yum -y install -q perl-Digest-MD5 wget
               aws configure set default.region ${AWS::Region}
-              bash /root/ottopdf/user-data.sh
-              mv /root/ottopdf/package/ /var/task/
+              bash /root/compile-spot-sqs/user-data.sh
+              mv /root/compile-spot-sqs/package/ /var/task/
               export PATH=/var/task/texlive/2017/bin/x86_64-linux/:$PATH
               export PERL5LIB=/var/task/texlive/2017/tlpkg/TeXLive/
     Type: AWS::EC2::LaunchTemplate
