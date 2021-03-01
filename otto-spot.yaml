@@ -374,7 +374,7 @@ Resources:
               cd /root && git clone https://github.com/didimoneto/ottopdf.git
               export REGION=${AWS::Region} 
               export S3BUCKET=${s3Bucket}
-              export S3BUCKETDESTINATION=arkmeds-latex-files-dev
+              export S3BUCKETDESTINATION=arkmeds-latex-files
               export SQSQUEUE=${sqsQueue}
               export CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
               chmod +x /root/ottopdf/user-data.sh
